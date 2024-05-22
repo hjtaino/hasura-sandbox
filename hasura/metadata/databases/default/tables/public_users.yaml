@@ -1,0 +1,16 @@
+table:
+  schema: public
+  name: users
+select_permissions:
+  - role: user
+    permission:
+      columns:
+        - id
+        - name
+        - first_name
+        - middle_name
+        - last_name
+        - date_of_birth
+        - username
+      filter: {}
+      allow_aggregations: true
